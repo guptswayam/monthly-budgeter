@@ -1,0 +1,37 @@
+.add_description,.value
+    padding: 13px
+    margin-left: 20px
+    font-size: 17px
+    border-radius: 3px
+    border: 0.04rem solid gray
+    color: gray
+.operation
+    padding: 0px 20px 0px 2px
+    border-radius: 3px
+    
+.value
+    max-width: 100px
+.add_description
+    min-width: 400px
+    
+    
+
+.add_btn
+    .fa-check-circle
+        color: $sky
+        margin-left: 20px
+        cursor: pointer
+        &:hover
+            color: lighten($sky,10%)
+            transform: scale(1.1) 
+    &:focus
+        outline: none
+
+    
+.red-focus
+    &:focus
+        outline: 1px solid #ff0000 
+    
+button.red-btn
+    .fa-check-circle
+        color: $red !important

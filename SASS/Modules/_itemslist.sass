@@ -1,0 +1,59 @@
+.income-list,.expenses-list
+    p
+        display: flex
+        justify-content: space-between
+        margin: 0
+        padding: 10px 10px
+        border-bottom: 1px solid #d1d1d1
+        i
+            font-size: 17px
+            margin-left: 8px
+            display: none
+            cursor: pointer
+        span
+            font-weight: 600
+            color: gray
+        &:hover 
+            .amount
+                transform: translate(-10px)
+                transition: 0.3s ease-in-out
+            i
+                display: inline-block
+                transform: translate(10px)
+                
+                
+.income-list
+    padding: 10px 10px 20px 0px 
+    .amount
+        color: $sky
+        
+.expenses-list
+    padding: 10px 0px 20px 10px
+    .amount
+        color: $red
+        .expense-percent
+            font-size: 12px
+            margin-left: 10px
+            color: $red
+            background-color: #f7cfcf
+            padding: 1px 3px
+        
+        
+        
+.income-head 
+    color: $sky
+    font-style: italic
+    text-decoration: underline
+.expenses-head
+    padding-left: 10px
+    color: $red
+    font-style: italic
+    text-decoration: underline
+    
+.item
+    &:first-child
+        p
+            border-top: 1px solid #d1d1d1
+    &:nth-child(even)
+        p
+            background-color: #f4f4f4

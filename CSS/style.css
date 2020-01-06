@@ -1,0 +1,159 @@
+* {
+  padding: 0;
+  margin: 0;
+  line-height: 1;
+  box-sizing: border-box; }
+
+body {
+  color: white;
+  overflow-x: hidden; }
+
+h1 {
+  line-height: 1.5;
+  font-weight: 100;
+  font-size: 45px;
+  font-family: serif;
+  color: white; }
+
+h2 {
+  line-height: 1.5;
+  font-weight: 100;
+  color: white; }
+
+button {
+  background-color: #e8e8e8;
+  border: none; }
+  button:focus {
+    outline: none; }
+
+.section-1 {
+  background: url(../back.jpg);
+  padding: 30px 0px;
+  text-align: center;
+  background-size: 100% 100%; }
+
+.section-2 {
+  background-color: #e8e8e8;
+  display: flex;
+  justify-content: center;
+  padding: 15px 10px; }
+
+.section-3 {
+  padding: 30px 0px; }
+
+.add_description, .value {
+  padding: 13px;
+  margin-left: 20px;
+  font-size: 17px;
+  border-radius: 3px;
+  border: 0.04rem solid gray;
+  color: gray; }
+
+.operation {
+  padding: 0px 20px 0px 2px;
+  border-radius: 3px; }
+
+.value {
+  max-width: 100px; }
+
+.add_description {
+  min-width: 400px; }
+
+.add_btn .fa-check-circle {
+  color: #2fb1c7;
+  margin-left: 20px;
+  cursor: pointer; }
+  .add_btn .fa-check-circle:hover {
+    color: #53c3d6;
+    transform: scale(1.1); }
+.add_btn:focus {
+  outline: none; }
+
+.red-focus:focus {
+  outline: 1px solid #ff0000; }
+
+button.red-btn .fa-check-circle {
+  color: #ff5252 !important; }
+
+.income, .expenses {
+  position: relative;
+  display: inline-block;
+  padding: 15px 15px;
+  max-width: 450px;
+  display: flex;
+  margin: 10px auto;
+  justify-content: space-between;
+  color: #525252; }
+  .income .iamount, .income .eamount, .expenses .iamount, .expenses .eamount {
+    color: white;
+    margin-right: 35px; }
+
+.income {
+  background-color: #2fb1c7; }
+
+.expenses {
+  background-color: #ff5252; }
+  .expenses .epercent {
+    position: absolute;
+    right: 10px;
+    top: 14px;
+    font-size: 12px;
+    margin-left: 10px;
+    color: white;
+    background-color: #be4545;
+    padding: 3px 3px; }
+
+.income-list p, .expenses-list p {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 10px 10px;
+  border-bottom: 1px solid #d1d1d1; }
+  .income-list p i, .expenses-list p i {
+    font-size: 17px;
+    margin-left: 8px;
+    display: none;
+    cursor: pointer; }
+  .income-list p span, .expenses-list p span {
+    font-weight: 600;
+    color: gray; }
+  .income-list p:hover .amount, .expenses-list p:hover .amount {
+    transform: translate(-10px);
+    transition: 0.3s ease-in-out; }
+  .income-list p:hover i, .expenses-list p:hover i {
+    display: inline-block;
+    transform: translate(10px); }
+
+.income-list {
+  padding: 10px 10px 20px 0px; }
+  .income-list .amount {
+    color: #2fb1c7; }
+
+.expenses-list {
+  padding: 10px 0px 20px 10px; }
+  .expenses-list .amount {
+    color: #ff5252; }
+    .expenses-list .amount .expense-percent {
+      font-size: 12px;
+      margin-left: 10px;
+      color: #ff5252;
+      background-color: #f7cfcf;
+      padding: 1px 3px; }
+
+.income-head {
+  color: #2fb1c7;
+  font-style: italic;
+  text-decoration: underline; }
+
+.expenses-head {
+  padding-left: 10px;
+  color: #ff5252;
+  font-style: italic;
+  text-decoration: underline; }
+
+.item:first-child p {
+  border-top: 1px solid #d1d1d1; }
+.item:nth-child(even) p {
+  background-color: #f4f4f4; }
+
+/*# sourceMappingURL=style.css.map */
